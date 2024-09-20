@@ -11,7 +11,7 @@ cd = list(map(int, input().split()))
 m = M # M 값을 넘으면 안되기 때문에 기준을 M으로 잡기
 
 
-for i in range(N-2):
+for i in range(N-2): #조합 문제
   for j in range(i+1, N-1):
     for k in range(j+1, N):
       sum = cd[i] + cd[j] + cd[k]
