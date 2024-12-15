@@ -8,9 +8,9 @@ def solution(food):
     answer = ''
     
     for i in range(1,len(food)):
-        answer += (food[i]//2)*str(i)
+        answer += (food[i]//2)*str(i) # 2명의 선수가 나눠먹어야 하니까 //2(숫자)*문자열
         
-    answer = answer + '0' + answer[::-1]
+    answer = answer + '0' + answer[::-1] # 첫 번째 선수가 먹은 거 + 0 + 두 번째 선수가 먹은 거(거꾸로)
     
     return answer
     
